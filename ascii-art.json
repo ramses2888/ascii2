@@ -7,7 +7,7 @@
   "paths": {
     "/ascii-art": {
       "post": {
-        "description": "convert text to ascii art",
+        "description": "convert text to ascii art beautiful",
         "requestBody": {
           "description": "text to convert",
           "required": true,

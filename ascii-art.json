@@ -1,0 +1,63 @@
+{
+  "openapi": "3.0.0",
+  "info": {
+    "version": "1.0.0",
+    "title": "ascii-art"
+  },
+  "paths": {
+    "/ascii-art": {
+      "post": {
+        "description": "convert text to ascii art",
+        "requestBody": {
+          "description": "text to convert",
+          "required": true,
+          "content": {
+            "application/json": {
+              "schema": {
+                "type": "object",
+                "properties": {
+                  "text": {
+                    "type": "string"
+                  }
+                }
+              },
+              "example": {
+                "text": "Hello"
+              }
+            }
+          }
+        },
+        "responses": {
+          "201": {
+            "description": "successfully converted the text",
+            "content": {
+              "application/json": {
+                "schema": {
+                  "type": "object",
+                  "properties": {
+                    "art": {
+                      "type": "string"
+                    }
+                  }
+                },
+                "example": {
+                  "art": "<ascii>"
+                }
+              }
+
+            }
+          },
+          "401": {
+            "description": "Unauthorised or invalid client id",
+            "content": {}
+          },
+          "501": {
+            "description": "Bad response from authorisation server",
+            "content": {}
+          }
+
+        }
+      }
+    }
+  }
+}

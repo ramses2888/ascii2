@@ -1,0 +1,10 @@
+{
+  "main": "ascii-art.json",
+  "name": "ascii-art",
+  "classifier": "oas",
+  "apiVersion": "v1",
+  "descriptorVersion": "1.0.0",
+  "groupId": null,
+  "assetId": "ascii-art",
+  "version": "1.0.0"
+}

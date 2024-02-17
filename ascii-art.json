@@ -9,7 +9,7 @@
       "post": {
         "description": "convert text to ascii art beautiful and",
         "requestBody": {
-          "description": "text to convert",
+          "description": "text to convert art",
           "required": true,
           "content": {
             "application/json": {

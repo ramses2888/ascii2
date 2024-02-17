@@ -29,7 +29,7 @@
         },
         "responses": {
           "201": {
-            "description": "successfully converted the text",
+            "description": "successfully converted the text wrote",
             "content": {
               "application/json": {
                 "schema": {
